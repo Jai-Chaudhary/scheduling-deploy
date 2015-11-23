@@ -27,7 +27,8 @@ def get_patients(schedule, time):
                 'schedule': 0,
                 'arrival': get_mins(x['arrival_dt']),
                 'begin': get_mins(x['begin_dt']),
-                'completion': get_mins(x['completed_dt'])
+                'completion': get_mins(x['completed_dt']),
+                'originalSite': x['site']
             }
         }
 
